@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/login.css"/>
+</head>
+
+
+<body>
+    <!--登录界面 -->
+    <div class="father">
+        <div class="header_font">
+            您好，欢迎来到凯菲！ 美味热线：0532-85811989
+        </div>
+        <div class="section">
+            <img src="img/load1.jpg" alt=""/>
+            <!-- 登录功能-->
+            <div class="content">
+                <div class="login_register">
+                    <div class="my_input my_login"><a href="login.html">会员登录</a></div>
+                    <div class="my_input my_register"><a href="register.html">会员注册</a></div>
+                </div>
+                <!-- 登录内容-->
+                <div class="login_detail">
+                    <div>
+                        账号：<input type="text" class="first-child_img" id="uname"/><br/>
+                    </div>
+                    <div>
+                        密码：<input type="password" class="last-child" id="upwd"/>
+                        <p class="mima"><a href="#">忘记密码？找回密码</a></p>
+                    </div>
+                    <!-- 登录-->
+                    <button class="login" onclick="login()"> 登录</button>
+                    <img src="img/login_third.jpg" alt="" class="third"/>
+                    <img src="img/weibo1.png" alt="" class="weibo"/>
+                    <img src="img/qq1.png" alt="" class="qq"/>
+                </div>
+            </div>
+            <!-- 底部-->
+            <div class="footer">
+                <!-- 底部标题-->
+                <div class="footer_content">
+                    <ul>
+                        <li><a href="#">产品名录</a>|</li>
+                        <li><a href="index.html">首页 </a>|</li>
+                        <li><a href="#">新闻动态 </a>|</li>
+                        <li><a href="#">关于凯菲 </a>|</li>
+                        <li><a href="#">烘焙课堂 </a>|</li>
+                        <li><a href="#">我要试吃 </a>|</li>
+                        <li><a href="#">我的卡券 </a>|</li>
+                        <li><a href="#">积分兑换</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p class="first-child">Copyright@calfaye.com 2016-2018 冀ICP备123456789号-1</p>
+                    <p>版权所有：北京凯菲 技术支持：依诺网</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--登录验证-->
+    <script src="js/common.js"></script>
+    <script>
+        function login(){
+            //创建xhr对象
+            var xhr = createXhr();
+            //监听
+            xhr.onreadystatechange = function (){
+                if(xhr.readyState ==4 && xhr.status == 200){
+                    var res = xhr.responseText;
+                    alert(res);
+                }
+            }
+            //连接
+            xhr.open('post','/myLogin/login',true);
+            //发送请求
+            xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+            var uname = $("uname").value;
+            var upwd = $("upwd").value;
+            var str = "uname="+uname+"&upwd="+upwd;
+            xhr.send(str);
+          } 
+    </script>
+</body>
+</html>

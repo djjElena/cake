@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/shopping.css"/>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <!-- 购物车页面-->
+    <!-- 头部-->
+    <!--<iframe src="header.html" frameborder="0" class="header"></iframe>-->
+	<header id="header"></header>
+    <!-- 主体-->
+    <div class="shop">
+        <!-- 左边-->
+        <div class="left">
+            <div class="">
+                <img src="img/shopping/md1.JPG" alt="" class="bigimg"/>
+            </div>
+            <img src="img/shopping/sm1.jpg" alt="" class="smallimg" data-md="img/shopping/md1.JPG" data-lg="img/shopping/lg1.JPG"/>
+            <img src="img/shopping/sm2.jpg" alt="" class="smallimg" data-md="img/shopping/md2.JPG" data-lg="img/shopping/lg2.JPG"/>
+            <img src="img/shopping/sm3.jpg" alt="" class="smallimg" data-md="img/shopping/md3.JPG" data-lg="img/shopping/lg3.JPG"/>
+        </div>
+        <!-- 右边-->
+        <div class="right">
+            <div class="back">
+                <a href="proDetail.html">&lt;返回<span>&nbsp;&nbsp;慕斯系列</span></a>
+            </div>
+            <div class="zt">
+                <h2>{{res[0].title}}</h2>
+				<h6>{{res[0].subtitle}}</h6>
+                <span>甜度：<img src="img/shopping/tiandu.png" alt=""/></span>
+                <i></i>
+            </div>
+            <div class="price">
+                价格：<span class="first-child">￥{{res[0].price.toFixed(2)}}元</span>
+                月销量<span>&nbsp;{{res[0].msale}}</span>
+                累计评价<span>&nbsp;{{res[0].praise}}</span>
+            </div>
+            <div class="kg">
+                <ul>
+                    <li>{{res[0].spec}}</li>
+                    <li>{{res[1].spec}}</li>
+                    <li>{{res[2].spec}}</li>
+                    <li>{{res[3].spec}}</li>
+                </ul>
+            </div>
+            <div class="jiajian">
+                <button id="jian">-</button>
+                <span>1</span>
+                <button id="jia">+</button>
+            </div>
+            <div class="people">
+                适用人数：<span>{{res[0].lname}}</span>
+            </div>
+            <div class="canju">
+                <p>标配餐具：</p>
+                <ul>
+                    <li class="canjua"> 刀x1</li>
+                    <li class="canjub"> 蜡烛x1</li>
+                    <li class="canjuc"> 叉x1</li>
+                    <li class="canjud"> 碟x1</li>
+                </ul>
+            </div>
+            <div class="goumai">
+                <a href="cart.html" class="a1">加入购物车</a>
+                <a href="#" class="a2">立即购买</a>
+                <div class="sc">
+                    <img src="img/shopping/shoucang.png" alt=""/>
+                    <span>收藏</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 产品展示-->
+    <div class="zhanshi">
+        <!-- 虚线-->
+        <div class="xuxian"></div>
+        <div class="miaoshu">商品描述</div>
+        <div class="pinglun">评论</div>
+    </div>
+    <div class="product">
+        <img src="img/shopping/jiaotangmusi.jpg" alt=""/>
+    </div>
+    <!-- 底部-->
+    <!--<div class="bottom">
+        <iframe src="footer2.html" frameborder="0" class="footer2"></iframe>
+        <!-- 页面底部-->
+        <!--<iframe src="footer.html" frameborder="0" class="foot"></iframe>
+    </div>-->
+	<footer id="footer"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+	<script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>	
+    <script src="js/shopping.js"></script>
+</body>
+</html>

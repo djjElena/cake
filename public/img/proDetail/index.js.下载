@@ -1,0 +1,133 @@
+$(function(){
+    //页面加载进来默认显示第一个
+    $(".navimg span").eq(0).addClass('xqmouse');
+    $(".bigimg img").eq(0).show();
+    $(".navimg span").mousemove(function(){
+        var ss=$(".navimg span").index($(this));
+        $(".navimg span").removeClass('xqmouse');
+        $(this).addClass('xqmouse');
+        $(".bigimg img").hide().eq(ss).show();
+     })
+    //页面加载默认选择第一个磅数
+    $(".xq-kg li").eq(0).addClass('clickli');
+    $(".xq-kg li").click(function(){
+        $(".xq-kg li").removeClass('clickli');
+        $(this).addClass('clickli');
+    })
+    //选择数量
+    var number=$(".xq-num").html();
+    $(".xq-num-b").click(function(){
+        number = ++number;
+       $(".xq-num").html(number);
+    })
+    $(".xq-num-a").click(function(){
+        if(number>1){
+             number = --number;
+             $(".xq-num").html(number);
+        }else{
+            return false;
+        }  
+    })
+    //商品详情评论选项卡
+    $(".miaoshu").click(function(){
+        $(this).addClass('modcheck');
+        $(".pinglun").removeClass('modcheck');
+        $(".miaoshu-cont").show();
+        $(".pinglun-cont").hide(); 
+    })
+     $(".pinglun").click(function(){
+        $(this).addClass('modcheck');
+        $(".miaoshu").removeClass('modcheck');
+        $(".miaoshu-cont").hide();
+        $(".pinglun-cont").show(); 
+    })
+     //储值卡查询
+     $(".chaxuna").click(function(){
+     	$(this).addClass('opti');
+     	$(".chaxunb").removeClass('opti');
+     	$(".gougou").show();
+     	$(".maomao").hide()
+     })
+      $(".chaxunb").click(function(){
+     	$(this).addClass('opti');
+     	$(".chaxuna").removeClass('opti');
+     	$(".gougou").hide();
+     	$(".maomao").show()
+     })
+      //储值卡
+      $(".card-cont").eq(0).show();
+      $(".c-tab").click(function(){
+      	var sss=$(".c-tab").index($(this));
+      	$(".card-cont").hide();
+      	$(".card-cont").eq(sss).show();
+      })
+      //登录选项卡
+      $(".loadtab a").click(function(){
+      	var s=$(".loadtab a").index($(this));
+      	$(".loadtab a").removeClass('xuanzhong');
+      	$(this).addClass('xuanzhong');
+      	$('.loadbox').hide();
+      	$('.loadbox').eq(s).show();
+      })
+      
+      //烘焙课堂
+      $(".hbktimg").hover(function(){
+      	$(this).children(".wite1").hide();
+      	$(this).children(".wite2").show();
+      	$(this).siblings(".hbketneite").addClass('aaaaaasss');
+      	$(this).siblings(".hbketneite").find("h3").hide();
+      	$(this).siblings(".hbketneite").find("p").show();
+      },function(){
+      	$(".wite1").show();
+      	$(".wite2").hide();
+      	$(".hbketneite").removeClass('aaaaaasss');
+      	$(".hbketneite h3").show();
+      	$(".hbketneite p").hide();
+      })
+      
+       $(".sahngke").hover(function(){
+      	$(this).children(".wite1").hide();
+      	$(this).children(".wite2").show();
+      	$(this).siblings(".hbketneite").addClass('wwwwwwwww');
+      	$(this).siblings(".hbketneite").find("h3").hide();
+      	$(this).siblings(".hbketneite").find("p").show();
+      },function(){
+      	$(".wite1").show();
+      	$(".wite2").hide();
+      	$(".hbketneite").removeClass('wwwwwwwww');
+      	$(".hbketneite h3").show();
+      	$(".hbketneite p").hide();
+      })
+       
+          
+	    var n=0;
+	$(".zuopinleft").click(function(){
+		if(n>1){n=2;}
+		else{n=n+1;}
+		$(".scrollboxss").animate({marginLeft:-320*n},500);
+		})
+	      
+    $(".zuopinright").click(function(){
+		if(n<1){n=0;}
+		else{n=n-1;}
+		$(".scrollboxss").animate({marginLeft:-320*n},500);
+		})
+	
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

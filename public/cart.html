@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/cart.css"/>
+</head>
+<body>
+<!-- 头部-->
+<header id="header"></header>
+<!--主体-->
+<div class="daohang">
+        当前位置:<a href="index.html">首页&gt;</a>购物流程
+    </div>
+    <div class="nr">
+        <div class="liebiao">商品列表</div>
+        <table width="99%" align="center" cellpadding="5" cellspacing="1">
+                <tr>
+                    <th>商品名称</th>
+                    <th>属性</th>
+                    <th>本店价</th>
+                    <th>购买数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <a href="#" target="_blank"><img src="img/shopping/sm1.jpg"/></a><br />
+                        <span>焦糖咖啡慕斯</span>
+                    </td>
+                    <td align="center">规格:1.3磅 <br /></td>
+                    <td align="center">￥188.00元</td>
+                    <td align="center">
+                        <input type="text" name="goods_number[213]" id="goods_number_213" value="1" size="4"style="text-align:center"/>
+                    </td>
+                    <td align="center">￥188.00元</td>
+                    <td align="center"><a href="#">删除</a></td>
+                </tr>
+        </table>
+        <table width="99%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+                <tr>
+                    <td bgcolor="#ffffff">购物金额小计 <span class="red">￥188.00元</span></td>
+                    <td align="right">
+                        <input type="button" value="清空购物车" class="btn_blue_1" />
+                        <input name="submit" type="submit" class="btn_blue_1" value="更新购物车" />
+                    </td>
+                </tr>
+        </table>
+        <!-- 按钮 -->
+        <div class="an">
+        <a href="proDetail.html"><img src="img/cart/continue.gif" alt="continue" /></a>
+        <a href="#"><img src="img/cart/checkout.gif" alt="checkout"  class="jiesuan"/></a>
+        </div>
+    </div>
+    <!-- 底部 -->
+    
+    <footer id="footer"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    
+</body>
+</html>

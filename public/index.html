@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/vue.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <style>
+        @keyframes round {
+            25% {
+              opacity: 1;
+            }
+            40% {
+              opacity: 0;
+            }
+          }
+          img:nth-child(1) {
+            animation-delay: 12s;
+          }
+          
+          img:nth-child(2) {
+            animation-delay: 8s;
+          }
+          
+          img:nth-child(3) {
+            animation-delay: 4s;
+          }
+          
+          img:nth-child(4) {
+            animation-delay: 0s;
+          }
+    </style>
+</head>
+<body>
+    <!-- 头部文件 -->
+    <!--<iframe src="header.html" frameborder="0" class="import1"></iframe>-->
+	<header id="header"></header>
+    <!-- 主体文件 -->
+        <!-- 轮播图片 -->
+        <div class="carousel">
+            <img class="photo" src="img/banner1.jpg" alt="">
+            <img class="photo" src="img/banner2.jpg" alt="">
+            <img class="photo" src="img/banner1.jpg" alt="">
+            <img class="photo" src="img/banner2.jpg" alt="">
+        </div>
+        <!-- 产品系列 -->
+        <div class="my_list">
+            <div class="c1">
+                <p class="my_border_radius my_circle1"></p>
+                <p>{{res[0].title}}</p>
+                <span class="text-muted">{{res[0].etitle}}</span>
+                <p class="my_detail">{{res[0].details}}</p>
+                <div class="my_circle1 my_input_detail"><a :href="res[0].href">了解详情</a></div>
+            </div>      
+            <div class="c1">
+                <p class="my_border_radius my_circle2"></p>
+                <p>{{res[1].title}}</p>
+                <span class="text-muted">{{res[1].etitle}}</span>
+                <p class="my_detail">{{res[1].details}}</p>
+                <div class="my_circle2 my_input_detail"><a :href="res[0].href">了解详情</a></div>
+            </div>
+            <div class="c1">
+            <p class="my_border_radius my_circle3"></p>
+                <p>{{res[2].title}}</p>
+                <span class="text-muted">{{res[2].etitle}}</span>
+                <p class="my_detail">{{res[2].details}}</p>
+                <div class="my_circle3 my_input_detail"><a :href="res[0].href">了解详情</a></div>
+            </div>
+            <div class="c1">
+                <p class="my_border_radius my_circle4"></p>
+                <p>{{res[3].title}}</p>
+                <span class="text-muted">{{res[3].etitle}}</span>
+                <p class="my_detail">{{res[3].details}}</p>
+                <div class="my_circle4 my_input_detail"><a :href="res[0].href">了解详情</a></div>
+            </div>
+            <div class="c1">
+                <p class="my_border_radius my_circle5"></p>
+                <p>{{res[4].title}}</p>
+                <span class="text-muted">{{res[4].etitle}}</span>
+                <p class="my_detail">{{res[4].details}}</p>
+                <div class="my_circle5 my_input_detail"><a :href="res[0].href">了解详情</a></div>
+            </div>
+        </div> 
+        <!-- 产品展示 -->
+        <div class="product_detail">
+            <img src="img/middle.png" alt="" class="img1">
+            <div class="show">
+                    <div class="my_div_img_width">
+                        <img src="img/p_1.jpg" alt="" class="my_img"/>
+                        <img src="img/1.jpg" alt="" class="my_img"/>
+                    </div>
+                    <div class="my_div_img_width">
+                        <img src="img/p_7.jpg" alt="" class="my_img1"/>
+                    </div>
+                    <div class="my_div_img_width">
+                        <img src="img/p_3.jpg" alt="" class="my_img"/>
+                        <img src="img/2.jpg" alt="" class="my_img"/>
+                    </div>
+                    <div class="my_div_img_width">
+                        <img src="img/3.jpg" alt="" class="my_img"/>
+                        <img src="img/p_2.jpg" alt="" class="my_img"/>
+                    </div>
+            </div>
+        <!-- 王子蛋糕 -->
+            <div class="product">
+                <div>
+                    <img src="img/kingcake.JPG" alt="" class="my_img2">
+                    <div class="kingcake">
+                        <h1 class="my_font1">王子蛋糕</h1>
+                        <div class="price">
+                            <span>198元/1.3磅</span>
+                            <span>298元/2.3磅</span><br/>
+                            <span>439元/3.5磅</span>
+                            <span>729元/5.5磅</span>
+                        </div>
+                        <div class="my_purchase">
+                            立即购买
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/class.jpg" alt="">
+                    <div>
+                        <ul class="try">
+                            <li class="first-child"> 
+                                <img src="img/class1.jpg" alt="" class=""/>
+                                <div class="my_footer_color my_card"> 积分兑换</div>
+                            </li>
+                            <li>
+                                <img src="img/class2.jpg" alt="" class="w-100"/>
+                                <div class="my_footer_color my_card"> 我要试吃</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        <!--联系我们-->
+        <div class="foot">
+                <div class="contact">
+                    <h1 class="my_h1">联系我们</h1>
+                    <p class="my_p">感谢您来到凯菲蛋糕官方网站，若您有任何疑问或者建议，请使用以下方式联系我们，我们将尽快给您回复，并为您提供最真诚的服务，谢谢！</p>
+                    <ul class="my_ul my_p">
+                        <li><p class="little"><img src="img/add.png">地址：北京市海淀区万寿路123号</p></li>
+                        <li><p class="little"><img src="img/phone.png">订购电话：0532-85811989</p></li>
+                        <li><p class="little"><img src="img/email.png">客服邮箱：services@calfaye.com</p></li>
+                    </ul>
+                </div>
+                <div class="my_map" id="dituContent">地图</div>
+              
+        </div>
+        
+    </div>
+    <!--底部文件-->
+    <footer id="footer"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+	<script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>	
+    <script src="js/map.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* .header{
+    width:100%;
+    height: 120px;
+} */
+/* .foot{
+    width:100%;
+} */
+*{
+    padding:0;
+    margin:0;
+}
+.ban{
+    width:100%;
+    /*border:1px solid red;*/
+}
+.fenlei{
+    width:100%;
+    height:80px;
+    margin-top:20px;
+    margin-bottom:30px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+.list{
+    padding-top: 3px;
+}
+.list div span{
+    font-size: 14px;
+    color: #666666;
+}
+.list div a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+    padding-right: 5px;
+    padding-left:5px;
+}
+.msxl{
+    background: #5e2113;
+    color:#FFFFFF !important;
+}
+.list div{
+    margin-left: 100px;
+    margin-top:12px;
+}
+/*��ǰλ��*/
+.weizhi{
+    color:#666666;
+    font-size: 14px;
+    position: absolute;
+    right:100px;
+    bottom:30px;
+}
+.weizhi a{
+    text-decoration: none;
+    color:#666666;
+    font-size: 14px;
+}
+/*�����Ʒչʾ*/
+.product_show{
+    width:1245px;
+    height:625px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cake{
+    width:370px;
+    height:300px;
+    border:1px solid #dfd7cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cake a>img{
+    padding-top:20px;
+}
+.detail{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+.detail>span{
+    padding-top:15px;
+}
+.tiandu {
+    line-height: 50px;
+    float: right;
+    color: #7e4d42;
+    font-size: 14px;
+    font-family: "΢���ź�";
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+.tiandu i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.tiandu i.diandudengji{
+    background: url(../img/proDetail/b4.png) center center no-repeat;
+}
+.guanggao{
+    background-color:#F6F4E6;
+    text-align: center;
+    margin-top:40px;
+    margin-bottom: 20px;
+    border:1px solid #DFD7CC;
+}
+
+/* .footer2{
+    width:100%;
+    height:280px;
+}
+.bottom{
+    width:100%;
+    background: #FEE9FA;
+} */

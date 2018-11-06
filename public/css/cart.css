@@ -1,0 +1,56 @@
+
+.daohang{
+    height:36px;
+    background: rgb(254, 240, 244);
+    padding-top:14px;
+    margin:0 auto;
+    width:1100px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.daohang a{
+    text-decoration: none;
+    color: #000000;
+}
+.nr{
+    width: 1120px;
+    height:305px;
+    margin:10px auto;
+    border: 1px solid rgb(240, 152, 154);
+    border-color: rgb(240, 152, 154) rgb(241, 191, 192) rgb(241, 191, 192);
+    border-top: 2px solid rgb(240, 152, 154);
+}
+.red{
+    color:red;
+    font-weight: bold;
+}
+.liebiao{
+    height:25px;
+    background: rgb(254, 240, 244);
+    color: rgb(203, 15, 38);
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 25px;
+}
+table{
+    background-color:#ffffff;
+}
+th{
+    border:1px solid #dddddd;
+}
+td{
+    border:1px solid #dddddd;
+    background-color: #ffffff;
+}
+.btn_blue_1{
+    background: #EF40A5;
+    color: #ffffff;
+    font-size: 15px;
+}
+.an{
+    margin-top:3px;
+    height: 40px;
+}
+.jiesuan{
+    float: right;
+}

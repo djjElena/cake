@@ -1,0 +1,227 @@
+
+.shop{
+    display: flex;
+    justify-content:center;
+	margin-top:80px;
+}
+.bigimg{
+    width:638px;
+    height:400px;
+}
+.smallimg{
+    border:1px solid #B69A94;
+    border-top:10px solid #B69A94 !important;
+    margin-top:15px;
+}
+.right{
+    width:500px;
+    height:400px;
+    padding-left: 20px;
+	/* margin-top:80px; */
+}
+.back{
+    border-bottom:1px solid #E5E5E5;
+    height:40px;
+    margin-top:15px;
+    padding-top:15px;
+    background: url(../img/shopping/left.png) right center no-repeat;
+}
+.back a{
+    text-decoration: none;
+    color:#000000;
+}
+.back a span{
+    color:#826058 !important;
+}
+
+.zt h2{
+    font-weight: normal;
+	margin-bottom:0;
+}
+.zt span{
+    font-size: 12px;
+    color:#826058;
+}
+.zt h6{
+	margin-top:10px;
+	margin-bottom:10px;
+	font-weight: normal;
+}
+.price{
+    color:#826058;
+    font-size: 12px;
+    margin-top:15px;
+}
+.price span.first-child{
+    color:#C22C20 !important;
+    font-size: 20px !important;
+}
+.price span{
+    display: inline-block;
+    padding-right:10px;
+}
+
+
+.kg{
+	margin-top:15px;
+}
+.kg ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left:0;
+}
+.kg ul li{
+    border:1px solid #4A1A04;
+    padding-right: 10px;
+    margin-right: 10px;
+    line-height: 30px;
+    font-size: 12px;
+    width:40px;
+	text-align:center;
+}
+.kg ul li:hover{
+    border:1px solid red;
+}
+
+.jiajian{
+	margin-top:20px;
+    margin-bottom: 5px;
+	
+}
+.jiajian button{
+    text-decoration: none;
+    border:1px solid #B69A94;
+    padding:8px;
+    padding-left:10px;
+    padding-right: 10px;
+	color:black;
+}
+.jiajian span{
+    width:15px;
+    padding:7px;
+    text-align: center;
+    /*padding-bottom: 1px;*/
+}
+.people{
+    font-size: 12px;
+    margin-top: 30px;
+}
+.people span{
+    border:1px solid #000000;
+    padding: 6px;
+}
+/*�;�*/
+.canju{
+    margin-top:15px;
+}
+.canju p{
+    font-size: 12px;
+	margin-bottom:10px;
+}
+.canju ul{
+    list-style: none;
+    width: 310px;
+    height: 50px;
+    background: #f9f8f8;
+    border: #e5ddd4 solid 1px;
+    padding-left:10px;
+    margin-top:0;
+}
+.canju ul li{
+    float: left;
+    height:50px;
+    font-size: 14px;
+    color:#706261;
+    line-height: 50px;
+    padding-right: 5px;
+}
+.canju ul li.canjua{
+    width: 70px;
+    text-indent: 30px;
+    background: url(../img/shopping/xq11.png) 6px center no-repeat;
+}
+.canju ul li.canjub{
+    width: 74px;
+    text-indent: 30px;
+    background: url(../img/shopping/xq22.png) 6px center no-repeat;
+}
+.canju ul li.canjuc{
+    width: 70px;
+    text-indent: 30px;
+    background: url(../img/shopping/xq33.png) 6px center no-repeat;
+}
+.canju ul li.canjud{
+    width: 70px;
+    text-indent: 30px;
+    background: url(../img/shopping/xq44.png) 6px center no-repeat;
+}
+/*��ť*/
+.goumai{
+	margin-top:15px;
+    padding-top:20px;
+}
+.goumai a{
+    height:38px;
+    width:120px;
+    border: 1px solid #c12c20;
+    text-decoration: none;
+    font-size: 14px;
+    padding:8px 15px;
+    margin-right: 10px;
+}
+.a1{
+    background:#f6e3e2;
+    color:#c12c20;
+}
+.a2{
+    background:#c12c20;
+    color:#ffffff;
+}
+.sc{
+    display: inline-block;
+    align-items: center;
+    font-size: 14px;
+}
+.zhanshi{
+    margin-top:40px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.xuxian{
+    border:1px dashed #000000;
+    margin:0 auto;
+    width:1200px;
+}
+.miaoshu{
+    position: absolute;
+    left:800px;
+    top:-10px;
+    background: #fff;
+    color: #4a1a04;
+    border: #4a1a04 solid 1px;
+    border-radius: 13px;
+    width: 128px;
+    text-align: center;
+}
+.pinglun{
+    position: absolute;
+    left: 950px;
+    top:-10px;
+    background: #4a1a04;
+    color: #ffffff;
+    border: #4a1a04 solid 1px;
+    border-radius: 13px;
+    width: 128px;
+    text-align: center;
+}
+.product{
+    width:1200px;
+    height:2651px;
+    margin:0 auto;
+    text-align: center;
+}
+.product img{
+    width: 1001px;
+    height: 2648px;
+}
